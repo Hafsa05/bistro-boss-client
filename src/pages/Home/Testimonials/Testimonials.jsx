@@ -33,6 +33,7 @@ const Testimonials = () => {
 								value={review.rating}
 								readOnly
 							/>
+							{/* <i style={{hight:'20px'}} className="fa-solid fa-apostrophe"></i> */}
 							<p className="my-10">{review.details}</p>
 							<h3 className="text-2xl text-yellow-600">{review.name}</h3>
 						</div>
