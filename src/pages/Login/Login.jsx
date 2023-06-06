@@ -37,6 +37,7 @@ const Login = () => {
 					showConfirmButton: false,
 					timer: 1500
 				});
+				
 				navigate(from, { replace: true });
 			})
 	}
@@ -92,7 +93,8 @@ const Login = () => {
 								{/* <button className="btn btn-xs btn-outline mt-5">Validate</button> */}
 							</div>
 							<div >
-								<input disabled={disable} className="btn btn-primary" type="submit" value='Login' />
+								{/* TODO: button disable for captcha */}
+								<input disabled={false} className="btn btn-primary" type="submit" value='Login' />
 							</div>
 						</form>
 						<p className='text-center'><small>New here?? <Link to='/signup'><span className='text-orange-500'>Create an account</span> </Link> </small></p>
